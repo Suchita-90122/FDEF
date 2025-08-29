@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #010508;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.todo-list input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #02080f;
+}
+
+.task {
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+/* Strike-through effect when checked */
+input[type="checkbox"]:checked + .task {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #777;
+}
